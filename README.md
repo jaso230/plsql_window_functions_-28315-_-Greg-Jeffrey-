@@ -46,6 +46,11 @@ Transactions
 | transaction_date | DATE | |
 | amount | DECIMAL | |
 
+Customers ---< Transactions >--- Products
+Customers → Transactions = 1:N
+
+Products → Transactions = 1:N
+
 Demonstrate correct and meaningful use of SQL JOINs using the tables step 3
 
 INNER JOIN
