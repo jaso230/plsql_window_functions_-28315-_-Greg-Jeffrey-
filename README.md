@@ -21,24 +21,30 @@ Expected Outcome: Identify top products, customer trends, and high-risk customer
 
 3. Database Tables
 
-CREATE TABLE Clients (
-ClientID INT PRIMARY KEY,
-Name VARCHAR(50),
-City VARCHAR(50)
-);
+Customers
+| Column | Type | Key |
+|--------|------|-----|
+| customer_id | INT | PK |
+| first_name | VARCHAR | |
+| last_name | VARCHAR | |
+| region | VARCHAR | |
 
-CREATE TABLE Comptes (
-AccountID INT PRIMARY KEY,
-ClientID INT,
-Balance DECIMAL(10,2)
-);
+Customers
+| Column | Type | Key |
+|--------|------|-----|
+| customer_id | INT | PK |
+| first_name | VARCHAR | |
+| last_name | VARCHAR | |
+| region | VARCHAR | |
 
-CREATE TABLE Transactions (
-TransactionID INT PRIMARY KEY,
-AccountID INT,
-Amount DECIMAL(10,2),
-TransactionDate DATE ) 
-);
+Transactions
+| Column | Type | Key |
+|--------|------|-----|
+| transaction_id | INT | PK |
+| customer_id | INT | FK → Customers(customer_id) |
+| product_id | INT | FK → Products(product_id) |
+| transaction_date | DATE | |
+| amount | DECIMAL | |
 
 Demonstrate correct and meaningful use of SQL JOINs using the tables step 3
 
