@@ -164,7 +164,7 @@ W3Schools – SQL Joins: https://www.w3schools.com/sql/sql_join.asp
 
 Integrity Statement:
 
-All work is original. Sources cited. No AI-generated content copied without adaptation.
+All work is original. Sources cited. No AI-generated content copied without adaptation. 
 
 
 
